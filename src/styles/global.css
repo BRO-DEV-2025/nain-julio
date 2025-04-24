@@ -5,9 +5,9 @@
  */
 
 :root {
-	--accent: #57575a;
+	--accent: #534805;
 	--accent-dark: #131414;
-	--black: 15, 18, 25;
+	--color-headers: #2c1414;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
 	--gray-dark: 34, 41, 57;
@@ -56,7 +56,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	color: rgb(var(--color-headers));
 	line-height: 1.2;
 }
 h1 {

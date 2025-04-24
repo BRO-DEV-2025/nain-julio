@@ -86,7 +86,7 @@ const posts = (await getCollection('propuestas'))
                         posts.map((post) => (
                             <li>
                                 <a href={`/propuestas/${post.id}/`}>
-                                    <img width={720} height={360} src={post.data.heroImage} alt="" />
+                                    <img loading="lazy" width={720} height={360} src={post.data.heroImage} alt="" />
                                     <h4 class="title">{post.data.title}</h4>
                                 </a>
                             </li>

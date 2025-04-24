@@ -1,7 +1,7 @@
 ---
-title: 'Seguridad para Todos'
+title: 'Seguridad: Programa "Camina Seguro"'
 description: 'Una estrategia integral para garantizar un entorno seguro mediante prevención, tecnología y colaboración ciudadana.'
-heroImage: '/seguridad-publica.png'
+heroImage: '/seguridad-publica.webp'
 ---
 
 
@@ -25,7 +25,7 @@ La seguridad es un derecho fundamental y una prioridad para nuestra comunidad. N
 
 ### Compromiso con la Comunidad
 
-Nos comprometemos a trabajar de la mano con los ciudadanos, escuchando sus preocupaciones y adaptando nuestras estrategias para responder a las necesidades reales de cada barrio.
+Nos comprometemos a trabajar de la mano con los ciudadanos, escuchando sus preocupaciones y adaptando nuestras estrategias para responder a las necesidades reales de nuestro municipio.
 
 Juntos, construiremos una comunidad más segura, donde todos puedan vivir con tranquilidad y confianza.
 

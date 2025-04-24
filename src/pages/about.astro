@@ -5,10 +5,10 @@ import Layout from '../layouts/BlogPost.astro';
 <Layout
     title=""
     description=""
-    heroImage="/sobre-mi.png"
+    heroImage="/nain-sobre-mi.webp"
 >
     <p class="about-text">
-        Soy Nain Julio García, un ciudadano comprometido con el desarrollo de nuestro querido municipio de Yecuatla. Como papá, esposo, ganadero y negociante, entiendo las necesidades y aspiraciones de nuestra comunidad. Mi objetivo es trabajar incansablemente para mejorar la calidad de vida de todos los habitantes de nuestro municipio.<br /><br />
+        Soy <span>Nain Julio García</span>, un ciudadano comprometido con el desarrollo de nuestro querido municipio de Yecuatla. Como papá, esposo, ganadero y negociante, entiendo las necesidades y aspiraciones de nuestra comunidad. Mi objetivo es trabajar incansablemente para mejorar la calidad de vida de todos los habitantes de nuestro municipio.<br /><br />
         
         Quiero gobernar con honestidad, transparencia y principios sólidos. Creo firmemente que la confianza de la gente es el pilar fundamental para construir un gobierno que realmente sirva a su comunidad. Mi compromiso es trabajar siempre con integridad, poniendo los intereses de Yecuatla por encima de cualquier interés personal o político.<br /><br />
         
@@ -29,6 +29,11 @@ import Layout from '../layouts/BlogPost.astro';
             color: #333;
             background-color: #fefefe;
             padding: 1em;
-                  }
+        }
+        /* Estilo llamativo en negritas para el span que contiene el nombre */
+        .about-text span {
+            font-weight: bold;
+            color: #8B4513;
+        }
     </style>
 </Layout>
