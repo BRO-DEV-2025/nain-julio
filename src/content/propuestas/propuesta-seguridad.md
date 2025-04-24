@@ -18,7 +18,7 @@ La seguridad es un derecho fundamental y una prioridad para nuestra comunidad. N
     Instalaremos cámaras de vigilancia inteligentes y sistemas de monitoreo en puntos estratégicos para prevenir el delito y mejorar la capacidad de respuesta.
 
 4. **Fomentar la participación ciudadana**  
-    Crearemos programas de vecinos vigilantes y líneas de comunicación directa con las autoridades para reportar actividades sospechosas.
+    Crearemos programas de vecinos vigilantes y líneas de comunicación directa con las autoridades para reportar actividades sospechosas mediante boton de panico.
 
 5. **Combatir las causas del delito**  
     Invertiremos en programas educativos, culturales y deportivos para jóvenes, reduciendo los factores de riesgo que los llevan a la delincuencia.
