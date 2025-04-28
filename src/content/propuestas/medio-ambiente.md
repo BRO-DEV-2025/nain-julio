@@ -2,6 +2,7 @@
 title: 'Medio ambiente: Programa "Estrategias de Conservación Ambiental"'
 description: 'Propuesta integral para proteger los recursos naturales, restaurar ecosistemas, fomentar la educación ambiental y promover un desarrollo sostenible en Yecuatla.'
 heroImage: '/propuesta.jpg'
+order: '3'
 ---
 
 Nuestra propuesta para la conservación ambiental de Yecuatla se centra en proteger los recursos naturales, restaurar los ecosistemas degradados, fomentar la educación ambiental y promover prácticas sostenibles. Estas acciones buscan garantizar un equilibrio entre el desarrollo humano y la preservación del entorno natural, construyendo un futuro más verde y saludable para nuestra comunidad.

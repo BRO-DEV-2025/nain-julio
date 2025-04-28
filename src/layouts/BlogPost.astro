@@ -7,6 +7,9 @@ import Footer from '../components/Footer.astro';
 type Props = CollectionEntry<'propuestas'>['data'];
 
 const { title, description, heroImage } = Astro.props;
+
+// Ordenar por el campo "order"
+posts.sort((a, b) => a.data.order - b.data.order);
 ---
 
 <html lang="es">

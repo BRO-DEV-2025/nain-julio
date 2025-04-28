@@ -2,6 +2,7 @@
 title: 'Educación y Cultura: Programa "Desarrollo Integral"'
 description: 'Propuestas enfocadas en fortalecer la educación y la cultura en Yecuatla mediante talleres artísticos, la creación de una casa de cultura y estrategias para promover la unión familiar y la salud mental.'
 heroImage: '/propuesta.jpg'
+order: '4'
 ---
 
 Nuestra propuesta para la educación y la cultura en Yecuatla se centra en fomentar el desarrollo integral de las personas a través del arte, la creatividad y el fortalecimiento de los lazos familiares. Estas acciones incluyen la implementación de talleres de música, danza y teatro, la creación de una casa de cultura y programas enfocados en la salud mental y la cohesión familiar, con el objetivo de construir una comunidad más unida, educada y culturalmente enriquecida.

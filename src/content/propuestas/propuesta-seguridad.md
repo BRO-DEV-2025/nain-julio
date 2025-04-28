@@ -2,6 +2,7 @@
 title: 'Seguridad: Programa "Camina Seguro"'
 description: 'Una estrategia integral para garantizar un entorno seguro mediante prevención, tecnología y colaboración ciudadana.'
 heroImage: '/seguridad-publica.webp'
+order: '5'
 ---
 
 
