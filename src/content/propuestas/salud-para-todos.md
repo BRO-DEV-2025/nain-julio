@@ -2,7 +2,7 @@
 title: '"Salud: Programa Manos Amigas Yecuatla"'
 description: 'Propuestas enfocadas en mejorar la salud en Yecuatla mediante clínicas rurales, equipamiento de ambulancias, brigadas médicas y apoyo psicológico.'
 heroImage: '/propuesta.jpg'
-order: '2'
+order: '3'
 ---
 
 Nuestra propuesta para la salud de los yecuatlecos se centra en garantizar el acceso a servicios médicos de calidad, fortalecer la infraestructura sanitaria, promover la prevención y el bienestar integral, y acercar la atención médica a cada comunidad. Estas acciones incluyen la habilitación de clínicas rurales, el equipamiento de la ambulancia municipal, la organización de brigadas médicas y el apoyo psicológico, con el objetivo de mejorar la calidad de vida, reducir desigualdades en salud y construir un futuro más saludable para todos en Yecuatla.

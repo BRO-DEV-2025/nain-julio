@@ -2,7 +2,7 @@
 title: 'Salud Física: Programa "Yecuatla Activo y Saludable"'
 description: 'Propuesta integral para fomentar el deporte, la actividad física y el bienestar en Yecuatla, promoviendo un estilo de vida saludable y fortaleciendo la comunidad.'
 heroImage: '/propuesta.jpg'
-order: '6'
+order: '7'
 ---
 
 Nuestra propuesta para promover la salud física en Yecuatla está diseñada para transformar nuestra comunidad mediante acciones concretas que fomenten el deporte, impulsen la actividad física al aire libre, establezcan espacios recreativos, organicen talleres de aeróbics y defensa personal, y creen gimnasios comunitarios accesibles. Con estas iniciativas, buscamos mejorar la calidad de vida, fortalecer el sentido de comunidad y construir un futuro más saludable y activo para todos los habitantes de nuestro municipio.

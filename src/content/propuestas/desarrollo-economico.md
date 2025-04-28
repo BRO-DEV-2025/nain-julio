@@ -2,7 +2,7 @@
 title: 'Desarrollo económico:Programa "A todos nos va a ir mejor"'
 description: 'Propuesta integral para fortalecer el comercio, fomentar el emprendimiento, impulsar el turismo y promover un desarrollo económico sostenible en Yecuatla.'
 heroImage: '/propuesta.jpg'
-order: '1'
+order: '2'
 ---
 
 Nuestra propuesta para el desarrollo económico de Yecuatla se enfoca en fortalecer el comercio local, fomentar el emprendimiento, impulsar el turismo, mejorar la infraestructura, apoyar la agricultura y ganadería sostenible, promover la educación técnica, fomentar la digitalización y establecer una Oficina Especializada para el Desarrollo Económico. Estas acciones buscan generar oportunidades, atraer inversiones y construir un futuro próspero y sostenible para nuestra comunidad.
