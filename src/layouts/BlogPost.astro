@@ -4,7 +4,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { getCollection } from 'astro:content';
-const posts = await getCollection('blog');
+
+const posts = await getCollection('propuestas');
 
 type Props = CollectionEntry<'propuestas'>['data'];
 
