@@ -134,12 +134,9 @@ hr {
 }
 
 .propuestas-banner img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  display: block;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  border-radius: 0;
 }
 
 @media (max-width: 720px) {
