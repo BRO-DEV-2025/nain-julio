@@ -13,16 +13,24 @@ const posts = await getCollection('propuestas');
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <style>
+      .hero-image {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      .hero-image img {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        height: auto;
+        display: block;
+        border-radius: 0;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      }
+
       main {
         max-width: 960px;
         margin: auto;
         padding: 2rem 1rem;
-      }
-
-      .hero-image img {
-        width: 100%;
-        border-radius: 12px;
-        margin-bottom: 1rem;
       }
 
       .about-text {
@@ -37,43 +45,27 @@ const posts = await getCollection('propuestas');
         color: #e95511;
       }
 
-      ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      ul li {
-        width: calc(50% - 1rem);
-      }
-
-      ul li:first-child {
-        width: 100%;
-      }
-
-      ul li img {
-        width: 100%;
-        border-radius: 12px;
-        margin-bottom: 0.5rem;
-      }
-
-      ul li a {
-        text-decoration: none;
-        display: block;
-      }
-
-      .title {
-        margin: 0;
-        color: rgb(var(--color-headers));
-        line-height: 1;
-      }
-
       @media (max-width: 720px) {
-        ul li {
+        body {
+          font-size: 16px;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        main {
+          padding: 1em;
+        }
+
+        .about-text {
+          font-size: 1em;
+          padding: 0 0.5em;
+        }
+
+        .hero-image img {
           width: 100%;
+          margin-left: 0;
         }
       }
     </style>
@@ -82,23 +74,24 @@ const posts = await getCollection('propuestas');
   <body>
     <Header />
 
+    <!-- Imagen fuera del <main> para que sea full-width -->
+    <div class="hero-image">
+      <img src="/nain-sobre-mi.jpeg" alt="Naín Julio García" />
+    </div>
+
     <main>
       <!-- SECCIÓN SOBRE MÍ -->
-      <section class="hero-image">
-        <img src="/nain-sobre-mi.jpeg" alt="Naín Julio García" />
-        <div class="about-text">
-          Soy <span>Naín Julio García</span>, un ciudadano comprometido con el desarrollo de nuestro querido municipio de Yecuatla. Como papá, esposo, ganadero y negociante, entiendo las necesidades y aspiraciones de nuestra comunidad. Mi objetivo es trabajar incansablemente para mejorar la calidad de vida de todos los habitantes de nuestro municipio.<br /><br />
+      <div class="about-text">
+        Soy <span>Naín Julio García</span>, un ciudadano comprometido con el desarrollo de nuestro querido municipio de Yecuatla. Como papá, esposo, ganadero y negociante, entiendo las necesidades y aspiraciones de nuestra comunidad. Mi objetivo es trabajar incansablemente para mejorar la calidad de vida de todos los habitantes de nuestro municipio.<br /><br />
 
-          Quiero gobernar con honestidad, transparencia y principios sólidos. Creo firmemente que la confianza de la gente es el pilar fundamental para construir un gobierno que realmente sirva a su comunidad. Mi compromiso es trabajar siempre con integridad, poniendo los intereses de Yecuatla por encima de cualquier interés personal o político.<br /><br />
+        Quiero gobernar con honestidad, transparencia y principios sólidos. Creo firmemente que la confianza de la gente es el pilar fundamental para construir un gobierno que realmente sirva a su comunidad. Mi compromiso es trabajar siempre con integridad, poniendo los intereses de Yecuatla por encima de cualquier interés personal o político.<br /><br />
 
-          Estoy convencido de que juntos podemos sacar adelante a nuestro municipio. Yecuatla tiene un enorme potencial, y con esfuerzo, dedicación y unidad, podemos transformar nuestra tierra en un lugar de oportunidades, progreso y bienestar para todos. Mi gobierno será un gobierno cercano a la gente, que escuche, que atienda y que resuelva.<br /><br />
+        Estoy convencido de que juntos podemos sacar adelante a nuestro municipio. Yecuatla tiene un enorme potencial, y con esfuerzo, dedicación y unidad, podemos transformar nuestra tierra en un lugar de oportunidades, progreso y bienestar para todos. Mi gobierno será un gobierno cercano a la gente, que escuche, que atienda y que resuelva.<br /><br />
 
-          No prometo soluciones mágicas, pero sí prometo trabajo constante, decisiones responsables y un equipo comprometido con el desarrollo de nuestra comunidad. Vamos a construir un Yecuatla donde cada habitante se sienta orgulloso de vivir, donde nuestros hijos tengan un futuro prometedor y donde nuestras tradiciones y valores sean la base de nuestro progreso.<br /><br />
+        No prometo soluciones mágicas, pero sí prometo trabajo constante, decisiones responsables y un equipo comprometido con el desarrollo de nuestra comunidad. Vamos a construir un Yecuatla donde cada habitante se sienta orgulloso de vivir, donde nuestros hijos tengan un futuro prometedor y donde nuestras tradiciones y valores sean la base de nuestro progreso.<br /><br />
 
-          Hoy más que nunca, necesitamos un liderazgo que inspire confianza, que actúe con rectitud y que sea un ejemplo de servicio público. Estoy aquí para ser ese líder, para trabajar contigo y para demostrar que con honestidad y principios, podemos lograr grandes cosas. ¡Juntos, vamos a sacar adelante a Yecuatla!
-        </div>
-      </section>
-
+        Hoy más que nunca, necesitamos un liderazgo que inspire confianza, que actúe con rectitud y que sea un ejemplo de servicio público. Estoy aquí para ser ese líder, para trabajar contigo y para demostrar que con honestidad y principios, podemos lograr grandes cosas. ¡Juntos, vamos a sacar adelante a Yecuatla!
+      </div>
     </main>
 
     <Footer />
