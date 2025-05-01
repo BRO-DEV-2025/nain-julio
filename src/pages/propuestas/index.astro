@@ -2,104 +2,176 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
-import { getCollection } from 'astro:content';
-const posts = await getCollection('propuestas')
 ---
 
-<!doctype html>
-<html lang="es-mx">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			main {
-				width: 960px;
-			}
-			ul {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-			ul li {
-				width: calc(50% - 1rem);
-			}
-			ul li * {
-				text-decoration: none;
-				transition: 0.2s ease;
-			}
-			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
-			}
-			ul li:first-child img {
-				width: 100%;
-			}
-			ul li:first-child .title {
-				font-size: 2.369rem;
-			}
-			ul li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
-			}
-			ul li a {
-				display: block;
-			}
-			.title {
-				margin: 0;
-				color: #e95511;
-				line-height: 1;
-			}
-			.date {
-				margin: 0;
-				color: rgb(var(--gray));
-			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
-			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
-			}
-			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
-				}
-				ul li {
-					width: 100%;
-					text-align: center;
-				}
-				ul li:first-child {
-					margin-bottom: 0;
-				}
-				ul li:first-child .title {
-					font-size: 1.563em;
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<Header />
-		<main>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/propuestas/${post.id}/`}>
-									<img loading="lazy" width={720} height={360} src={post.data.heroImage} alt="" />
-									<h4 class="title">{post.data.title}</h4>
+<html lang="es">
+  <head>
+    <BaseHead title="Propuestas | Naín Julio García" description="Conoce las propuestas por el desarrollo de Yecuatla." />
+    <style>
+      main {
+        max-width: 960px;
+        margin: auto;
+        padding: 2rem 1rem;
+      }
+      details {
+        margin-bottom: 1.5rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 1rem;
+        background: #f9f9f9;
+      }
+      summary {
+        font-weight: bold;
+        font-size: 1.25rem;
+        cursor: pointer;
+        margin-bottom: 0.5rem;
+      }
+      ul {
+        margin: 0;
+        padding-left: 1.25rem;
+      }
+      li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
 
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
-		</main>
-		<Footer />
-	</body>
+  <body>
+    <Header />
+
+    <main>
+      <div class="propuestas-banner">
+          <img src="/nain-julio-garcia-inicio.jpg" alt="Naín Julio García con la gente" />
+      </div>
+
+      <h1>Propuestas por un Yecuatla con futuro</h1>
+
+      <details open>
+        <summary>Desarrollo Económico</summary>
+        <ul>
+          <li>Creación del Directorio Municipal de Comercios (Físico y Digital)</li>
+          <li>Cursos de Gestión Digital y Venta en Línea</li>
+          <li>Apertura de Casas de Artesanías en Xalapa y Veracruz</li>
+          <li>Reapertura de la Carnicería Ganadera y sucursal en Xalapa</li>
+          <li>Mercado “Consume Local” en cabecera y ferias regionales</li>
+          <li>Oficina del Empleo y vinculación con empresas</li>
+          <li>Cursos de oficios: pastelería, peluquería, turismo, etc.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Fomento Agropecuario</summary>
+        <ul>
+          <li>Realización del Censo Municipal de Productores</li>
+          <li>Fomento agrícola con capacitaciones y nuevos cultivos</li>
+          <li>Granjas de insectos como alternativa alimentaria</li>
+          <li>Incentivos para granjas porcinas, caprinas, etc.</li>
+          <li>Cursos de ganadería sustentable y producción de quesos</li>
+          <li>Reactivación de la cultura cafetalera</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Turismo</summary>
+        <ul>
+          <li>Rutas de la Sierra y guías “Recorre Yecuatla”</li>
+          <li>Marca “Yehualasco” y proyección regional</li>
+          <li>Espectaculares turísticos en la región</li>
+          <li>Libro de la Gastronomía de Yecuatla</li>
+          <li>Ampliación del Mirador de la Z como parador turístico</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Ecología y Medio Ambiente</summary>
+        <ul>
+          <li>Plan de Reforestación con empleos temporales</li>
+          <li>Viveros e invernaderos comunitarios</li>
+          <li>Restauración y conservación de ecosistemas</li>
+          <li>Protección de cuencas hidrográficas</li>
+          <li>Programa “Yecuatla Limpia” con escuelas y comunidad</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Salud</summary>
+        <ul>
+          <li>Equipamiento de ambulancia municipal</li>
+          <li>Brigada permanente de salud (médico, dentista, nutriólogo, psicólogo)</li>
+          <li>Talleres de salud mental en escuelas</li>
+          <li>Campañas de sanitización y control de vectores</li>
+          <li>Apertura de clínica veterinaria y plan de salud animal</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Educación</summary>
+        <ul>
+          <li>Modernización tecnológica de bibliotecas</li>
+          <li>Dotación de libros a escuelas</li>
+          <li>Talleres de música, danza, teatro, etc.</li>
+          <li>Exposiciones sociales y artísticas municipales</li>
+          <li>Incentivos a jóvenes universitarios y gestiones con universidades</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Cultura</summary>
+        <ul>
+          <li>Creación de la Casa de Cultura y Comité Cultural</li>
+          <li>Proyección regional del Carnaval del Torito</li>
+          <li>Fomento de lenguas nativas</li>
+          <li>Domingos Culturales</li>
+          <li>Cine Ambulante Cultural</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Seguridad</summary>
+        <ul>
+          <li>Capacitación continua a la policía municipal</li>
+          <li>Modernización con drones y cámaras personales</li>
+          <li>Sistema de botón de pánico</li>
+          <li>Campañas de cultura vial para peatones y ciclistas</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Desarrollo Social</summary>
+        <ul>
+          <li>Oficina de Atención al Migrante</li>
+          <li>Sábados Familiares para la niñez</li>
+          <li>Gestión de programas sociales federales y estatales</li>
+          <li>Programas de mejoramiento de vivienda</li>
+          <li>Rehabilitación y apertura de caminos rurales</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Deporte</summary>
+        <ul>
+          <li>Fomento deportivo multidisciplinario</li>
+          <li>Mantenimiento y modernización de espacios deportivos</li>
+          <li>Talleres de activación física (zumba, aeróbics, etc.)</li>
+          <li>Visorias deportivas para talento local</li>
+          <li>Circuitos de senderismo y caminatas</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>DIF</summary>
+        <ul>
+          <li>Apoyos a personas vulnerables (medicinas, equipo, etc.)</li>
+          <li>Espacios inclusivos para la niñez</li>
+          <li>Cursos de señas y braille</li>
+          <li>Menús braille y formación accesible para comercios</li>
+          <li>Campañas de salud mental, equidad e inclusión</li>
+          <li>Gestión con sector privado para programas sociales</li>
+        </ul>
+      </details>
+    </main>
+
+    <Footer />
+  </body>
 </html>
