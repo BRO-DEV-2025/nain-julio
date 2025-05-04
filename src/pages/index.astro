@@ -9,9 +9,10 @@ const posts = await getCollection('propuestas');
 ---
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es:MX">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
       .hero-image {
         width: 100%;
@@ -44,6 +45,32 @@ const posts = await getCollection('propuestas');
         font-weight: bold;
         color: #e95511;
       }
+
+      .propuestas-banner {
+        margin-top: calc(10vh); /* Ajusta el margen superior según la altura del nav */
+        width: 100vw; /* Asegura que el banner ocupe todo el ancho de la pantalla */
+        display: flex;
+        justify-content: center; /* Centra el contenido horizontalmente */
+        padding: 0; /* Elimina cualquier padding */
+      }
+
+      .propuestas-banner img {
+        width: 100vw; /* La imagen ocupa todo el ancho de la pantalla */
+        height: auto; /* Mantiene la proporción de la imagen */
+        border: none; /* Elimina cualquier borde */
+        margin: 0; /* Elimina cualquier margen */
+      }
+
+      /* Estilos responsive */
+      @media (max-width: 720px) {
+        .propuestas-banner {
+          margin-top: calc(8vh); /* Ajusta el margen superior para pantallas pequeñas */
+        }
+
+        .propuestas-banner img {
+          width: 100vw; /* Asegura que la imagen ocupe todo el ancho de la pantalla */
+          height: auto; /* Mantiene la proporción de la imagen */
+        }
 
       @media (max-width: 720px) {
         body {
