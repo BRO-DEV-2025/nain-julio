@@ -2,6 +2,7 @@
 main {
   max-width: 960px;
   margin: auto;
+  margin-top: calc(10vh + 1rem); /* Ajusta el margen superior según la altura del header */
   padding: 2rem 1rem;
   font-size: 1.1rem;
   line-height: 1.7;
