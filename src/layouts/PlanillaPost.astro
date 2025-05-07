@@ -26,10 +26,15 @@ posts.sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
             }
             .hero-image {
                 width: 100%;
+                max-width: 100%; /* Asegura que no se desborde del contenedor */
+                overflow: hidden; /* Evita que el contenido desbordado sea visible */
+                margin-top: 3rem; /* Agrega un margen superior para separar la imagen del encabezado */
             }
             .hero-image img {
                 display: block;
                 margin: 0 auto;
+                max-width: 100%; /* Limita el ancho máximo al 100% del contenedor */
+                height: auto; /* Mantiene la proporción de la imagen */
                 border-radius: 12px;
                 box-shadow: var(--box-shadow);
             }
@@ -58,7 +63,7 @@ posts.sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
         <main>
             <article>
                 <div class="hero-image">
-                    {heroImage && <img loading="lazy" width={1020} height={510} src={heroImage} alt="" />}
+                    {heroImage && <img loading="lazy"  src={heroImage} alt="" />}
                 </div>
                 <div class="prose">
                     <div class="title">

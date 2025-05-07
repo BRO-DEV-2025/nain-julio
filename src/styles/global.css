@@ -1,4 +1,33 @@
 /* Estilo global */
+
+
+
+/* Tamaño de fuente global */
+html {
+  font-size: 18px; /* Tamaño base para pantallas grandes */
+}
+
+body {
+  font-size: 1rem; /* Usa el tamaño base definido en html */
+  line-height: 1.6; /* Mejora la legibilidad */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 1024px) {
+  html {
+    font-size: 16px; /* Reduce el tamaño base en pantallas medianas */
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 14px; /* Reduce aún más el tamaño base en pantallas pequeñas */
+  }
+}
+
+
+
+
 body {
   font-family: 'Poppins', sans-serif; /* Fuente moderna */
   margin: 0;
@@ -53,8 +82,8 @@ ul {
 }
 
 li {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
+  margin-bottom: 1rem; /* Incrementa el espacio entre los elementos */
+  line-height: 1.8; /* Mejora la legibilidad */
 }
 
 /* ====== IMAGEN DE CABECERA ====== */

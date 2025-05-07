@@ -12,81 +12,65 @@ const posts = (await getCollection('planilla')).sort((a, b) => (a.data.order ?? 
 <html lang="es-mx">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			main {
-				width: auto;
-			}
-			ul {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-			ul li {
-				width: calc(33.33% - 1.5rem); /* Cambiado para 3 columnas */
-				text-align: center; /* Centra el contenido dentro de cada elemento */
-			}
-			ul li * {
-				text-decoration: none;
-				transition: 0.2s ease;
-			}
-			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
-			}
-			ul li:first-child img {
-				width: 100%;
-			}
-			ul li:first-child .title {
-				font-size: 2.369rem;
-			}
-			ul li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
-			}
-			ul li a {
-				display: block;
-			}
-			.title {
-				margin: 0;
-				color: #e95511;
-				line-height: 1;
-			}
-			.Cargo {
-				text-align: center; /* Centra el texto de la clase Cargo */
-				margin-top: 0.5rem;
-				color: #333; /* Cambia el color del texto si es necesario */
-			}
-			.date {
-				margin: 0;
-				color: rgb(var(--gray));
-			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
-			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
-			}
-			@media (max-width: 720px) {
+			<style>
 				ul {
-					gap: 0.5em;
+					display: flex;
+					flex-wrap: wrap;
+					gap: 2rem; /* Incrementa el espacio entre los elementos */
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					justify-content: center; /* Centra los elementos en el contenedor */
 				}
+
 				ul li {
-					width: 100%; /* Cambia a 1 columna en pantallas pequeñas */
+					width: calc(30% - 2rem); /* Aumenta el tamaño de las columnas en pantallas grandes */
 					text-align: center;
+					box-sizing: border-box;
 				}
-				ul li:first-child {
-					margin-bottom: 0;
+
+				ul li img {
+					width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor */
+					height: auto; /* Mantiene la proporción de las imágenes */
+					border-radius: 8px; /* Opcional: bordes redondeados */
+					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra para las imágenes */
+					margin-bottom: 0.5rem;
 				}
-				ul li:first-child .title {
-					font-size: 1.563em;
+
+				ul li a {
+					text-decoration: none;
+					color: inherit;
+					display: block;
 				}
-			}
-		</style>
+
+				.title {
+					margin: 0.5rem 0 0;
+					font-size: 1.2rem;
+					color: #e95511;
+					line-height: 1.4;
+				}
+
+				.Cargo {
+					margin-top: 0.25rem;
+					font-size: 1rem;
+					color: #333;
+				}
+
+				@media (max-width: 1024px) {
+					ul li {
+						width: calc(45% - 1.5rem); /* Ajusta a 2 columnas con más espacio en pantallas medianas */
+					}
+				}
+
+				@media (max-width: 720px) {
+					ul li {
+						width: calc(100% - 1rem); /* Cambia a 1 columna en pantallas pequeñas */
+					}
+					ul li img {
+						border-radius: 6px; /* Ajusta el diseño para pantallas pequeñas */
+					}
+				}
+			</style>
 	</head>
 	<body>
 		<Header />
@@ -96,7 +80,7 @@ const posts = (await getCollection('planilla')).sort((a, b) => (a.data.order ?? 
 					{posts.map((post) => (
 						<li>
 							<a href={`/planilla/${post.id}/`}>
-								<img loading="lazy" width={720} height={360} src={post.data.heroImage} alt="" />
+								<img loading="lazy"  src={post.data.heroImage} alt="" />
 								<div class="Cargo">
                                     <h3 class="title">{post.data.title}</h3>
                                     <h4 class="Cargo">{post.data.description}</h4>
