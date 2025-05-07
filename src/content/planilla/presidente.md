@@ -1,0 +1,29 @@
+---
+title: "C. Naín Julio García"
+description: "PRESIDENTE PROPIETARIO"
+heroImage: '/fotos-planilla/nain-julio-garcia.png'
+order: 1
+---
+
+
+Papá y Esposo.
+Ganadero y Negociante.
+Orgullosamente de Yecuatla
+
+### Sobre mí
+
+Soy Nain Julio García, un ciudadano comprometido con el desarrollo de nuestro querido municipio de Yecuatla. Como papá, esposo, ganadero y negociante, entiendo las necesidades y aspiraciones de nuestra comunidad. Mi objetivo es trabajar incansablemente para mejorar la calidad de vida de todos los habitantes de nuestro municipio.
+
+### Mi compromiso
+
+Quiero gobernar con honestidad, transparencia y principios sólidos. Creo firmemente que la confianza de la gente es el pilar fundamental para construir un gobierno que realmente sirva a su comunidad. Mi compromiso es trabajar siempre con integridad, poniendo los intereses de Yecuatla por encima de cualquier interés personal o político.
+
+Estoy convencido de que juntos podemos sacar adelante a nuestro municipio. Yecuatla tiene un enorme potencial, y con esfuerzo, dedicación y unidad, podemos transformar nuestra tierra en un lugar de oportunidades, progreso y bienestar para todos. Mi gobierno será un gobierno cercano a la gente, que escuche, que atienda y que resuelva.
+
+No prometo soluciones mágicas, pero sí prometo trabajo constante, decisiones responsables y un equipo comprometido con el desarrollo de nuestra comunidad. Vamos a construir un Yecuatla donde cada habitante se sienta orgulloso de vivir, donde nuestros hijos tengan un futuro prometedor y donde nuestras tradiciones y valores sean la base de nuestro progreso.
+
+Hoy más que nunca, necesitamos un liderazgo que inspire confianza, que actúe con rectitud y que sea un ejemplo de servicio público. Estoy aquí para ser ese líder, para trabajar contigo y para demostrar que con honestidad y principios, podemos lograr grandes cosas. ¡Juntos, vamos a sacar adelante a Yecuatla!
+
+### Propuestas
+
+**Estoy convencido de que juntos podemos construir un Yecuatla más próspero y lleno de oportunidades para todos. ¡Cuento con tu apoyo!**
