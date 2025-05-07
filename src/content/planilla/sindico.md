@@ -1,5 +1,5 @@
 ---
-title: "C. Dolores Alondra Méndez López"
+title: "LSC. Dolores Alondra Méndez López"
 description: "SÍNDICO PROPIETARIO."
 heroImage: '/fotos-planilla/dolores-alondra-mendez-lopez.png'
 order: 2
