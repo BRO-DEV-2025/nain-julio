@@ -13,4 +13,17 @@ const blog = defineCollection({
 	}),
 });
 
-export const collections = {propuestas: blog};
+
+const planilla = defineCollection({
+	// Load Markdown and MDX files in the `src/content/propuestas/` directory.
+	loader: glob({ base: './src/content/planilla', pattern: '**/*.{md,mdx}' }),
+	// Type-check frontmatter using a schema
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+		heroImage: z.string().optional(),
+		order: z.number().optional(),
+	}),
+});
+
+export const collections = {propuestas: blog,planilla};
