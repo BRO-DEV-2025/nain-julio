@@ -1,6 +1,6 @@
 ---
 title: "Lic. Amidea Marisol Martinez Albino"
-description: "REGIDOR PROPIETARIO."
+description: "REGIDOR PROPIETARIO"
 heroImage: '/fotos-planilla/amidea-marisol-martinez.png'
 order: 3
 ---

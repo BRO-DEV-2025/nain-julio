@@ -1,6 +1,6 @@
 ---
 title: "Lic. Bladimir Landa Martinez"
-description: "PRESIDENTE SUPLENTE."
+description: "PRESIDENTE SUPLENTE"
 heroImage: '/fotos-planilla/bladimir-landa-martinez.png'
 order: 4
 ---
