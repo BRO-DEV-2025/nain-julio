@@ -1,0 +1,97 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('planilla')).sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+---
+
+<!doctype html>
+<html lang="es-mx">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+			<style>
+				ul {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 2rem; /* Incrementa el espacio entre los elementos */
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					justify-content: center; /* Centra los elementos en el contenedor */
+				}
+
+				ul li {
+					width: calc(30% - 2rem); /* Aumenta el tamaño de las columnas en pantallas grandes */
+					text-align: center;
+					box-sizing: border-box;
+				}
+
+				ul li img {
+					width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor */
+					height: auto; /* Mantiene la proporción de las imágenes */
+					border-radius: 8px; /* Opcional: bordes redondeados */
+					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra para las imágenes */
+					margin-bottom: 0.5rem;
+				}
+
+				ul li a {
+					text-decoration: none;
+					color: inherit;
+					display: block;
+				}
+
+				.title {
+					margin: 0.5rem 0 0;
+					font-size: 1.2rem;
+					color: #e95511;
+					line-height: 1.4;
+				}
+
+				.Cargo {
+					margin-top: 0.25rem;
+					font-size: 1rem;
+					color: #333;
+				}
+
+				@media (max-width: 1024px) {
+					ul li {
+						width: calc(45% - 1.5rem); /* Ajusta a 2 columnas con más espacio en pantallas medianas */
+					}
+				}
+
+				@media (max-width: 720px) {
+					ul li {
+						width: calc(100% - 1rem); /* Cambia a 1 columna en pantallas pequeñas */
+					}
+					ul li img {
+						border-radius: 6px; /* Ajusta el diseño para pantallas pequeñas */
+					}
+				}
+			</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section>
+				<ul>
+					{posts.map((post) => (
+						<li>
+							<a href={`/planilla/${post.id}/`}>
+								<img loading="lazy"  src={post.data.heroImage} alt="" />
+								<div class="Cargo">
+                                    <h3 class="title">{post.data.title}</h3>
+                                    <h4 class="Cargo">{post.data.description}</h4>
+                                </div>
+
+							</a>
+						</li>
+					))}
+				</ul>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
